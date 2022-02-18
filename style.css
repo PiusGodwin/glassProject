@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right top, #d3c9d2, #e2f2f5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Glass {
+  height: 70vh;
+  width: 70%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 10px;
+  display: flex;
+}
+
+.circle1,
+.circle2 {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position: absolute;
+  /* top:10%; */
+  /* left: 10%; */
+  z-index: 1;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+.circle1 {
+  top: 10.5%;
+  left: 10.5%;
+  border-radius: 50%;
+  position: absolute;
+}
+.circle2 {
+  bottom: 10.5%;
+  right: 10.5%;
+  border-radius: 50%;
+}
+.profile {
+  height: 100%;
+  width: 30%;
+  background-color: rgba(14, 13, 13, 0.836);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid rgb(8, 8, 8);
+  margin: 2px;
+  background-color: rgba(243, 174, 174, 0.8);
+}
+.avatar > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.name {
+  font-size: 14px;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.avatar > .name {
+  display: flex;
+  justify-content: center;
+}
+
+.social_icons {
+  display: flex;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap;  */
+  position: absolute;
+  flex-direction: column;
+  /* align-self:flex-end; */
+}
+.social_icons > img {
+  height: 25px;
+  width: 25px;
+  margin-top: 0%;
+  border-radius: 50%;
+  display: block;
+  flex-direction: column;
+  position: relative;
+}
+.social_icons > p {
+  margin: 10px;
+  color: white;
+}
+
+.movies {
+  height: 100%;
+  width: 70%;
+  background-color: rgb(19, 19, 19);
+}
+.img_container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  align-content: flex-start;
+  justify-content: space-around;
+  /* height: 100%;
+    width: 70%; */
+}
+.img_container > img {
+  width: 91px;
+  margin: 10px;
+  margin-bottom: 5px;
+  line-height: 75px;
+}
